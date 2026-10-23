@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Email — Aplicação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card wide">
+    <header class="topbar">
+      <div>
+        <h1>My Email</h1>
+        <p class="muted">Olá! Esta é uma tela de e-mail de demonstração.</p>
+      </div>
+      <button id="logout" class="secondary" type="button">Logoff</button>
+    </header>
+    <form id="email-form">
+      <label for="to">Para</label>
+      <input id="to" type="email" placeholder="colega@exemplo.com" required>
+      <label for="subject">Assunto</label>
+      <input id="subject" maxlength="150" required>
+      <label for="body">Mensagem</label>
+      <textarea id="body" rows="5" maxlength="3000" required></textarea>
+      <button type="submit">Enviar e-mail (simulação)</button>
+      <p id="message" role="status" class="message"></p>
+    </form>
+    <p class="hint">A mensagem não será enviada de verdade. O backend apenas confirma a simulação.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

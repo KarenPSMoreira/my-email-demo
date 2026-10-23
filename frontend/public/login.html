@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Email — Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>My Email</h1>
+    <p class="muted">Entre para acessar sua caixa de e-mail demonstrativa.</p>
+    <form id="login-form">
+      <label for="username">Usuário</label>
+      <input id="username" name="username" autocomplete="username" required>
+      <label for="password">Senha</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required>
+      <button type="submit">Entrar</button>
+      <p id="message" role="status" class="message"></p>
+    </form>
+    <p class="hint">Conta de laboratório: <b>demo</b> / <b>Demo123!</b></p>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>
